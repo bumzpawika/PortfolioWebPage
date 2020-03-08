@@ -30,6 +30,11 @@ body{
     left: 20px;
     width: 50px;
     border: none;
+    z-index: 99;
+}
+
+#back:hover{
+    opacity: 0.7;
 }
 
 .grid-container{
@@ -85,3 +90,4 @@ body{
     font-family: thFont;
     font-size: 20px;
 }
+

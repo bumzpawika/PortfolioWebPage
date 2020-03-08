@@ -93,4 +93,9 @@ a:hover{
     top: 20px;
     left: 20px;
     width: 50px;
+    z-index: 99;
+}
+
+#back:hover{
+    opacity: 0.7;
 }
