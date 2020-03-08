@@ -1,0 +1,455 @@
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: headFont;
+    src: url(SummerLove.otf);
+}
+@font-face{
+    font-family: bodyFont;
+    src: url(IHeartSummer.otf);
+}
+@font-face{
+    font-family: thFont;
+    src: url(RSU.ttf);
+}
+
+body{
+    background-color: #FFEDCF;
+    background-image: url("img/bghead.png"),url("img/bgfoot.png");
+    background-repeat: no-repeat,no-repeat;
+    background-size: contain,contain;
+    background-position: top,bottom;
+    font-family: bodyFont;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-gap: 10px;
+    border: none;
+    justify-content: center;
+    /* margin: auto; */
+}
+    
+.grid-container > div{
+    /* border: 1px solid black; */
+    /* font-size: 30px; */
+    /* text-align: center; */
+    /* margin: 0px; */
+}
+    
+#login{
+    grid-column: 1/span 2;
+    font-family: headFont;
+    font-size: 25px;
+    text-align: right;
+}
+    
+#head{
+    grid-column: 1/span 2;
+}
+    
+#contact{
+    grid-column: 1/span 1;
+    margin-left: 50%;
+}
+#about{
+    grid-column: 2/span 1;
+    margin-right: 50%;
+
+}
+    
+#hobby{
+    grid-column: 1/span 2;
+}
+
+#left{
+    grid-column: 1/span 1;
+    margin-left: 10%;
+    margin-top: 50px;
+
+}
+
+#right{
+    grid-column: 2/span 1;
+    margin-top: 50px;
+}
+#project{
+    grid-column: 1/span 1;
+    margin: auto;
+}
+#assignment{
+    grid-column: 2/span 1;
+}
+
+#ref{
+    grid-column: 1/span 2;
+    color: white;
+    margin-top: 20px;
+}
+
+a:link{
+    color: #E06C4B;
+    text-decoration: none;
+}
+
+a:visited{
+	color: #E06C4B; 
+}
+a:hover{
+    color: #C95035;
+}
+
+img{
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#head > div > img{
+    width: 40%;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.iphoto{
+    border: 10px solid #9DC7CF;
+    margin-bottom: 50px;
+}
+
+h1,h2{
+    /* font-family: cursive; */
+    /* text-align: center; */
+    line-height: 100%;
+}
+
+h1{
+    color: #9DC7CF;
+    font-size: 20px;
+}
+h2,ul{
+    color: #F6A482;
+    font-size: 10px;
+}
+
+#nickname{
+    letter-spacing: 5px;
+}
+#name{
+    letter-spacing: 4px;
+}
+
+#contact > h1{
+    font-size: 10px;
+    text-align: left;
+    line-height: 300%;
+    letter-spacing: normal;
+}
+#contact > h2{
+    
+    text-align: left;
+    line-height: 300%;
+
+}
+#about > h2{
+    text-align: right;
+    line-height: 300%;
+
+}
+#about > h1{
+    text-align: right;
+ 
+}
+
+.flex_container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+
+.imghobby > div > img{
+    margin: 0px 20px;
+}
+
+#left > .flex_container{
+    justify-content: left;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.flex_container > div{
+    width: 150px;
+}
+div{
+    font-size: 10px;
+    text-align: center;
+    color: #F6A482;
+}
+#left > div > #textSkill{
+    text-align: left;
+}
+#left > div > h1{
+    text-align: right;
+    line-height: 100%;
+}
+#left > div > h2{
+    text-align: right;
+    line-height: 200%;
+}
+
+#right > img{
+    width: 60%;
+    margin : auto;
+    margin-bottom: 50px;
+}
+
+#right > ul{
+    text-align: left;
+}
+ul{
+    margin-left: 15%;
+    line-height: 300%;
+}
+
+#Header{
+    /* margin-top: 80px; */
+    color: white;
+    font-size: 20px;
+}
+
+.grid2{
+    display: grid;
+    grid-template-columns: 20% 70%;
+    grid-template-rows: 30px 40px;
+    grid-gap: 0px;
+    border: none;
+    justify-content: center;
+    padding: auto;
+    margin-top: 20px;
+}
+
+#asimg{
+    grid-row: 1/span 2;
+    width: 70%;
+
+}
+#asimg > img{
+    /* margin-left: 0px; */
+    margin-right: 0px;
+    /* height: 70px; */
+    width: 80%;
+}
+#asname{
+    grid-row: 1/span 1;
+    color: white;
+    text-align: left;
+}
+#asclick{
+    grid-row: 2/span 1;
+    color: white;
+    text-align: left;
+}
+
+.btn{
+    background-color: #99CBCC;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    font-size: 10px;
+    font-family: bodyFont;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #6FB5B5;
+}
+hr{
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+@media only screen and (max-width: 900px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+    }
+    #login{
+        grid-column: 1/span 1;
+        font-family: headFont;
+        font-size: 15px;
+        text-align: right;
+    }
+        
+    #head{
+        grid-column: 1/span 1;
+    }
+        
+    #contact{
+        grid-column: 1/span 1;
+        margin-left: 50%;
+    }
+    #about{
+        grid-column: 1/span 1;
+        margin-right: 50%;
+    
+    }
+        
+    #hobby{
+        grid-column: 1/span 1;
+    }
+    
+    #left{
+        grid-column: 1/span 1;
+        margin-left: 10%;
+        margin-top: 50px;
+    
+    }
+    
+    #right{
+        grid-column: 1/span 1;
+        margin-top: 50px;
+    }
+    #project{
+        grid-column: 1/span 1;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    #assignment{
+        grid-column: 1/span 1;
+    }
+    
+    #ref{
+        grid-column: 1/span 1;
+        color: white;
+        margin-top: 20px;
+    }
+}
+
+div.shadow{
+    width: 70%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    text-align: center;
+    color: black;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #99CBCC;
+}
+
+#imgProject > img{
+    width: 100%;
+    margin: auto auto auto 0px;
+}
+
+.grid-project{
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-gap: 10px;
+}
+#imgProject{
+    grid-column: 1/span 1;
+}
+    
+#infoProject{
+    grid-column: 2/span 1;
+    font-size: 20px;
+    text-align: left;
+    font-family: thFont;
+    color: white;
+    padding: 10px;
+    margin: auto 0px;
+}
+
+#back {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+}
+
+
+.gridContact{
+    display: grid;
+    position: fixed;
+    right: 10px;
+    bottom: 30px;
+    grid-template-columns: 15%;
+    grid-gap: 10px;
+    justify-content: right;
+}
+
+#facebook{
+    grid-row: 1/span 1;
+}
+#facebook:hover, #instagram:hover{
+    opacity: 0.7;
+}
+
+#instagram{
+    grid-row: 1/span 1;
+}
+
+
+span{
+    position: fixed;
+    display: inline-block;
+    background: #86bcbc;
+    /* opacity: 0.5; */
+    padding: 0px 5px;
+    top: 40%;
+    height: 20%;
+    border-radius: 20px;
+}
+/* #menu{
+    position: fixed;
+    display: inline-block;
+    background: gray;
+    opacity: 0.5;
+    padding: 0px 5px;
+    top: 40%;
+    height: 20%;
+    border-radius: 20px;
+    visibility: hidden;
+} */
+
+.menu{
+    visibility: hidden;
+    position: fixed;
+    /* display: inline-block; */
+    /* background: #E06C4B; */
+    background-color: #99CBCC;
+    opacity: 0.8;
+    margin-left: 10px;
+    padding: 0px 0px;
+    top: 37.5%;
+    height: 25%;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+span:hover .menu{
+    visibility: visible;
+}
+
+#iconmenu{
+    /* border: 1px solid black; */
+    opacity: 1;
+    width: 35px;
+    margin-top: 38%;
+    margin-left: 5px;
+    margin-right: 5px;
+    filter: grayscale(50%);
+    /* filter: brightness(0.5); */
+}
+
+#iconmenu:hover{
+    opacity: 0.7;
+}
+

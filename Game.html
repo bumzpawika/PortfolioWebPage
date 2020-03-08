@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Square game</title>
+		<script type="text/javascript" src="game.js"></script>
+		<link rel="stylesheet" type="text/css" href="game.css">
+	</head>
+	<body>
+		<a href="index.html">
+			<img src="img/back.png" alt="back" id="back">
+		</a>
+
+		<div class="grid-container">
+			<div id="header">
+				<div>
+					Square Game
+				</div>
+			</div>
+			
+			<div id="game">
+				<fieldset class="control">
+					<!-- <legend>Control</legend> -->
+					Number of box: <br/>
+					<input type="text" name="numbox" id="numbox" class="input" required><br/>
+					Color: <br/>
+					<select name="color" id = "color" class="input">
+						  <option value="red">Red</option>
+						  <option value="blue">Blue</option>
+						  <option value="green">Green</option>
+					</select><br/>
+					<button id="start">Start</button>
+					<div id="timerClock"> Timer :
+						<div id="clock"></div>
+					</div>
+				</fieldset>
+
+
+
+				<div id="squares-container">
+					<div id="squares-layer"></div>
+				</div>
+			</div>
+		</div>
+		<!-- these codes were adapted from https://courses.cs.washington.edu/courses/cse154/17sp/lecture/more-dom/code/squares.html  -->
+		
+	
+	</body>
+</html>

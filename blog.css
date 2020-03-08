@@ -1,0 +1,87 @@
+#post{
+    
+}
+
+#reply1{
+
+}
+
+#reply2{
+
+}
+
+body{
+    background-color: #FFEDCF;
+}
+
+@font-face{
+    font-family: bodyFont;
+    src: url(IHeartSummer.otf);
+}
+
+@font-face{
+    font-family: thFont;
+    src: url(RSU.ttf);
+}
+
+#back {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    border: none;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+}
+.grid-container > div{
+    /* border: 1px solid black; */
+    background-image: url("img/HeadBlog.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    padding: 10%;
+    border-radius: 30px;
+    margin: auto 10%;
+    background-color: #E2EBE5;
+}
+
+#Blogger{
+    grid-row: 1/span 1;
+}
+
+.btn{
+    width: 49%;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    height: 30px;
+    background-color: #5FC4B1;
+    font-family: bodyFont;
+    color: white;
+    font-size: 10px;
+}
+
+.btn:hover{
+    background-color: #3FBEA7;
+}
+
+
+.textarea{
+    width: 98%;
+    height: 80px;
+    border: #5FC4B1 solid 2px;
+    padding: 0px;
+    margin: 0px;
+    font-family: thFont;
+    font-size: 20px;
+    
+}
+
+.intext{
+    font-family: thFont;
+    font-size: 20px;
+}

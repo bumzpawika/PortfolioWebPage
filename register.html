@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Page Title</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='login.css'>
+	<script src='register.js'></script>
+</head>
+<body>
+	<a href="login.html">
+		<img src="img/back.png" alt="back" id="back">
+	</a>
+
+	<div class="grid-regis">
+		<div id="regis">
+			<div class="info">
+				<form name="myForm" id="myForm" action="login.html">
+					<fieldset class="field2">
+						<legend>Register</legend>
+						<span><p>^ require</p></span> <br>
+						<span id="errormsg" style="color: red;"></span> <br>
+						First name <p>^</p> : 
+						<input type="text" name="firstname" class="color2" required>
+						&emsp; Last name <p>^</p> : 
+						<input type="text" name="lastname" class="color2" required>
+						<br>
+						Gender <p>^</p> : 
+						<input type="radio" name="gender" value="male" id="male" class="radio">Male
+						<input type="radio" name="gender" value="female" id="female" class="radio">Female
+						<input type="radio" name="gender" value="Other" id="other" class="radio">Other
+						<br>
+						Birthday <p>^</p> : 
+						<input type="date" name="bday" value="" class="color2" required>
+						<br>
+						Email address <p>^</p> : 
+						<input type="email" name="email" class="color2" required>
+						<br>
+						Username <p>^</p> : 
+						<input type="text" name="username" class="color2" required>
+						<br>
+						Password <p>^</p> : 
+						<input type="password" name="password" class="color2" required>
+						<br>
+						Retype Password <p>^</p> : 
+						<input type="password" name="repassword" class="color2" required>
+						<br>
+						
+					</fieldset>
+					<fieldset class="field3">
+						<input type="submit" value="Register" class="btn">
+						<input type="reset" value="Reset" class="btn">
+					</fieldset>
+				</form>
+			</div>
+			<img id="one"></img>
+		</div>
+
+		<div id="btnregis">
+
+		</div>
+	</div>
+</body>
+</html>

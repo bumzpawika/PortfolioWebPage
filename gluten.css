@@ -1,0 +1,167 @@
+.div_head{
+    font-family: thFont;
+    font-size: 80px;
+    margin: auto;
+    text-align: center;
+}
+.main{
+    font-size: 50px;
+}
+div{
+    font-family: thFont;
+    text-align: center;
+}
+ul , ol{
+    font-family: thFont; 
+    /* font-size: 20px; */
+    font-weight: bold;
+    font-style: italic;
+    margin: auto;
+}
+.left_page{
+    text-align: left;
+}
+img {
+    padding: 10px;
+    margin: 10px;
+    border: 3px dotted wheat;
+
+}
+.PicHead{
+    width: 30%;
+}
+.Ingredient{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+
+.one{
+    position: static;
+    top: 50px;
+    margin: 10px;
+}
+
+hr{
+    height: 30px;
+    background-color: wheat;
+    border: none;
+}
+table{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+}
+body{
+    background-image: url(img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p{
+    font-family: thFont;
+    font-size: 15pt;
+    color: darkslategray;
+    text-align: center;
+}
+
+a:link{
+    color: lightsalmon;
+}
+a:visited{
+    color: hotpink;
+}
+a:hover{
+    color: lightcoral;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto 60%;
+    padding: 100px;
+    grid-gap: 20px;
+}
+.grid-container > div{
+    /* border: 1px solid black; */
+    font-size: 20px;
+}
+.grid-container > div > .main{
+    font-size: 40px;
+}
+.imgIn{
+    width: 20%;
+    margin: 10px;
+}
+#header{
+    grid-column: 1/span 2;
+}
+#menu{
+    grid-column: 1/span 2;
+}
+#main{
+    grid-column: 1/span 1;
+    background-color: white;
+    opacity: 0.7;
+}
+#right{
+    grid-column: 2/span 1;
+    background-color: white;
+    opacity: 0.7;
+}
+#footer{
+    grid-column: 1/span 2;
+}
+#Recipe{
+    grid-column: 1/span 2;
+}
+@media only screen and (max-width: 767px){
+    .grid-container{
+        grid-template-columns: auto;
+        grid-gap: 30px;
+        padding: 50px;
+    }
+    .PicHead{
+        width: 60%;
+    }
+    .imgIn{
+        width: 80%;
+    }
+    .grid-container> div{
+        font-size: 15px;
+    }
+    .grid-container > div > .main{
+        font-size: 30px;
+    }
+    #header{
+        grid-column: 1/span 1;
+    }
+    #menu{
+        grid-column: 1/span 1;
+    }
+    #main{
+        grid-column: 1/span 1;
+    }
+    #right{
+        grid-column: 1/span 1;
+    }
+    #footer{
+        grid-column: 1/ span 1;
+    }
+    #Recipe{
+        grid-column: 1/span 2;
+        background-color: white;
+    }
+}
+
+#back {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    border: none;
+}
+
+@font-face{
+    font-family: thFont;
+    src: url(RSU.ttf);
+}
