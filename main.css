@@ -274,75 +274,7 @@ hr{
     height: 100px;
 }
 
-@media only screen and (max-width: 900px){
-    .grid-container{
-        display: grid;
-        grid-template-columns: auto;
-        grid-gap: 10px;
-    }
-    #login{
-        grid-column: 1/span 1;
-        font-family: headFont;
-        font-size: 15px;
-        text-align: right;
-    }
-        
-    #head{
-        grid-column: 1/span 1;
-    }
-        
-    #contact{
-        grid-column: 1/span 1;
-        margin-left: 50%;
-    }
-    #about{
-        grid-column: 1/span 1;
-        margin-right: 50%;
-    
-    }
-        
-    #hobby{
-        grid-column: 1/span 1;
-    }
-    
-    #left{
-        grid-column: 1/span 1;
-        margin-left: 10%;
-        margin-top: 50px;
-    
-    }
-    
-    #right{
-        grid-column: 1/span 1;
-        margin-top: 50px;
-    }
-    #project{
-        grid-column: 1/span 1;
-        margin: auto;
-        margin-bottom: 50px;
-    }
-    #assignment{
-        grid-column: 1/span 1;
-        margin: 0px;
-        margin-bottom: 100px;
-    }
-    
-    #ref{
-        grid-column: 1/span 1;
-        color: white;
-        margin-top: 20px;
-    }
-    #Header{
-        /* margin-top: 80px; */
-        color: #F6A482;
-        font-size: 20px;
-    }
-    #asname{
-        grid-row: 1/span 1;
-        color: rgb(253, 180, 148);
-        text-align: left;
-    }
-}
+
 
 div.shadow{
     width: 70%;
@@ -418,22 +350,6 @@ div.shadow{
     width: 80%;
 }
 
-@media only screen and (max-width: 900px){
-    .gridContact{
-        /* display: grid; */
-        position: fixed;
-        right: 15px;
-        bottom: 30px;
-        grid-template-columns: 15%;
-        grid-gap: 10px;
-        justify-content: right;
-        margin: auto;
-        width: 18%;
-        height: 20%;
-        text-align: right;
-    }
-}
-
 
 span{
     position: fixed;
@@ -445,17 +361,6 @@ span{
     height: 20%;
     border-radius: 20px;
 }
-/* #menu{
-    position: fixed;
-    display: inline-block;
-    background: gray;
-    opacity: 0.5;
-    padding: 0px 5px;
-    top: 40%;
-    height: 20%;
-    border-radius: 20px;
-    visibility: hidden;
-} */
 
 .menu{
     visibility: hidden;
@@ -506,4 +411,99 @@ span:hover .menu{
     width: 30%;
     margin: 10px;
     height: auto;
+}
+
+@media only screen and (max-width: 900px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+    }
+    #login{
+        grid-column: 1/span 1;
+        font-family: headFont;
+        font-size: 15px;
+        text-align: right;
+    }
+        
+    #head{
+        grid-column: 1/span 1;
+    }
+        
+    #contact{
+        grid-column: 1/span 1;
+        margin-left: 50%;
+    }
+    #about{
+        grid-column: 1/span 1;
+        margin-right: 50%;
+    
+    }
+        
+    #hobby{
+        grid-column: 1/span 1;
+    }
+    
+    #left{
+        grid-column: 1/span 1;
+        margin-left: 10%;
+        margin-top: 50px;
+    
+    }
+    
+    #right{
+        grid-column: 1/span 1;
+        margin-top: 50px;
+    }
+    #project{
+        grid-column: 1/span 1;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    #assignment{
+        grid-column: 1/span 1;
+        margin: 0px;
+        margin-bottom: 100px;
+    }
+    
+    #ref{
+        grid-column: 1/span 1;
+        color: white;
+        margin-top: 20px;
+    }
+    #Header{
+        /* margin-top: 80px; */
+        color: #F6A482;
+        font-size: 20px;
+    }
+    #asname{
+        grid-row: 1/span 1;
+        color: rgb(253, 180, 148);
+        text-align: left;
+    }
+    .gridContact{
+        /* display: grid; */
+        position: fixed;
+        right: 15px;
+        bottom: 30px;
+        grid-template-columns: 15%;
+        grid-gap: 10px;
+        justify-content: right;
+        margin: auto;
+        width: 18%;
+        height: 20%;
+        text-align: right;
+    }
+    h1{
+        font-size: 14px;
+    }
+    div {
+        font-size: 8px;
+    }
+    .pimg{
+        width: 80%;
+    }
+    #infoProject{
+        font-size: 13px;
+    }
 }
